@@ -3,4 +3,46 @@
   background-image: url("./assets/images/pattern.png");
   background-attachment: fixed;
   background-repeat: repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__pane {
+    padding-left: 4rem;
+    text-align: left;
+    transform: translateY(-3%);
+  }
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--color-light);
+
+    @media screen and (min-width: 540px) {
+      font-size: 7rem;
+    }
+
+    @media screen and (min-width: 1080px) {
+      font-size: 9rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 6rem;
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-light);
+
+    @media screen and (min-width: 540px) {
+      font-size: 4rem;
+    }
+
+    @media screen and (min-width: 1080px) {
+      font-size: 5rem;
+    }
+  }
 }
