@@ -8,13 +8,20 @@
 
   &::before {
     position: absolute;
-    font-size: 15rem;
-    transform: rotate(83deg);
+    font-size: 10rem;
+    transform: rotate(7deg);
+    right: 1rem;
+    top: 1rem;
     font-weight: 700;
+
+    @media screen and (min-width: 540px) {
+      font-size: 14rem;
+      right: 2rem;
+      top: 2rem;
+    }
 
     @media screen and (min-width: 1080px) {
       font-size: 20rem;
-      transform: rotate(7deg);
       right: 4rem;
       top: 4rem;
     }

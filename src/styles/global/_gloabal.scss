@@ -8,7 +8,9 @@
   font-family: 'Roboto Mono', monospace;
   list-style: none;
   outline: none;
-  color: var(--color-dark)
+  color: var(--color-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
