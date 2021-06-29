@@ -5,8 +5,6 @@ class Hamburger {
     this.status = false;
     this.HTMLIcon = null;
     this.navbar = null;
-
-    this.init();
   }
 
   showNavbar() {

@@ -1,8 +1,5 @@
 .section {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   overflow: hidden;
 
@@ -59,5 +56,10 @@
       content: "ABOUT";
       color: var(--color-low-contrast-accent);
     }
+  }
+
+  &__pane {
+    height: 70vh;
+    width: 90%;
   }
 }
