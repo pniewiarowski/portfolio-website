@@ -1,0 +1,73 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+  font-size: 5rem;
+  font-weight: 700;
+  border-bottom: 8px double var(--color-dark);
+  box-shadow: var(--shadow);
+  z-index: 10;
+  transition: transform 0.2s ease-in-out;
+  transform:
+    rotate(-1deg)
+    translateX(-4px)
+    translateY(-110%);
+
+  &--active {
+    transform:
+      rotate(-1deg)
+      translateX(-4px)
+      translateY(-4px);
+  }
+
+  @media screen and (min-width: 1080px) {
+    width: 50%;
+    width: fit-content;
+    height: fit-content;
+    font-size: 3rem;
+    padding: 2rem;
+    transform:
+      rotate(-1deg)
+      translateX(-4px)
+      translateY(-4px);
+  }
+
+  &__list {
+    @media screen and (min-width: 1080px) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      transform: rotate(4deg);
+
+      &:after {
+        width: 3rem;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0rem;
+      height: 3rem;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      background: var(--color-light);
+      transition: 0.2s ease;
+    }
+  }
+
+  &__link {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  list-style: none;
+  outline: none;
+  color: var(--color-dark)
+}
+
+:root {
+  font-size: 6px;
+
+  @media screen and (min-width: 1080px) {
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: 2160px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 3240px) {
+    font-size: 18px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

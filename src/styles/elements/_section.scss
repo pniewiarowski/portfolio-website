@@ -1,0 +1,56 @@
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    font-size: 15rem;
+    transform: rotate(83deg);
+    font-weight: 700;
+
+    @media screen and (min-width: 1080px) {
+      font-size: 20rem;
+      transform: rotate(7deg);
+      right: 4rem;
+      top: 4rem;
+    }
+  }
+
+  &--projects {
+    background-color: var(--color-dark);
+    border-top: 4px double var(--color-accent);
+    border-bottom: 4px double var(--color-accent);
+
+    &::before {
+      content: "PROJECTS";
+      color: var(--color-low-contrast-dark);
+    }
+  }
+
+  &--skillset {
+    background-color: var(--color-light);
+    border-top: 4px double var(--color-dark);
+    border-bottom: 4px double var(--color-dark);
+
+    &::before {
+      content: "SKILLSET";
+      color: var(--color-low-contrast-light);
+    }
+  }
+
+  &--about {
+    background-color: var(--color-accent);
+    border-top: 4px double var(--color-dark);
+    border-bottom: 4px double var(--color-dark);
+
+
+    &::before {
+      content: "ABOUT";
+      color: var(--color-low-contrast-accent);
+    }
+  }
+}
