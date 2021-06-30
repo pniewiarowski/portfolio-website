@@ -10,6 +10,7 @@
     right: 1rem;
     top: 1rem;
     font-weight: 700;
+    z-index: 0;
 
     @media screen and (min-width: 540px) {
       font-size: 14rem;
@@ -50,7 +51,6 @@
     background-color: var(--color-accent);
     border-top: 4px double var(--color-dark);
     border-bottom: 4px double var(--color-dark);
-
 
     &::before {
       content: "ABOUT";

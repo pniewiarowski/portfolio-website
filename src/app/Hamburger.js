@@ -1,9 +1,9 @@
 class Hamburger {
-  constructor(selector = "", navbarSelector = "") {
-    this.selector = selector;
+  constructor(hamburgerSelector = "", navbarSelector = "") {
+    this.hamburgerSelector = hamburgerSelector;
     this.navbarSelector = navbarSelector;
     this.status = false;
-    this.HTMLIcon = null;
+    this.hamburger = null;
     this.navbar = null;
   }
 
@@ -18,15 +18,15 @@ class Hamburger {
   }
 
   init() {
-    this.HTMLIcon = document.querySelector(this.selector);
+    this.hamburger = document.querySelector(this.hamburgerSelector);
     this.navbar = document.querySelector(this.navbarSelector);
 
-    this.HTMLIcon.addEventListener("click", () => {
+    this.hamburger.addEventListener("click", () => {
       this.showNavbar();
     });
 
     document.addEventListener("click", (event) => {
-      if (!this.HTMLIcon.contains(event.target) && this.status) {
+      if (!this.hamburger.contains(event.target) && this.status) {
         this.hideNavbar();
       }
     });
