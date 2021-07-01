@@ -17,23 +17,7 @@
         position: relative;
 
         @media screen and (min-width: 540px) {
-            width: 500px;
-        }
-
-        @media screen and (min-width: 1080px) {
-            width: 650px;
-        }
-
-        @media screen and (min-width: 2160px) {
-            width: 950px;
-        }
-
-        @media screen and (min-width: 3240px) {
-            width: 1250px;
-        }
-
-        @media screen and (min-width: 4480px) {
-            width: 1550px;
+            width: 70rem;
         }
 
         &::before {
