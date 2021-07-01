@@ -2,23 +2,21 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 3.5rem;
+  padding: 4rem;
   background-color: var(--color-accent);
   color: var(--color-dark);
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   border-bottom: 8px double var(--color-dark);
   box-shadow: var(--shadow);
   z-index: 10;
   transition: transform 0.2s ease-in-out;
   transform:
-    rotate(-1deg)
     translateX(-4px)
     translateY(-110%);
 
   &--active {
     transform:
-      rotate(-1deg)
       translateX(-4px)
       translateY(-4px);
   }
@@ -30,7 +28,6 @@
     font-size: 3rem;
     padding: 2rem;
     transform:
-      rotate(-1deg)
       translateX(-4px)
       translateY(-4px);
   }
@@ -47,8 +44,6 @@
     position: relative;
 
     &:hover {
-      transform: rotate(4deg);
-
       &:after {
         width: 3rem;
       }

@@ -7,18 +7,12 @@
   font-weight: bold;
   border-right: double 8px var(--color-dark);
   padding: 1.5rem;
-  transform: rotateZ(4deg) translateX(-4px);
   transition:
-    border ease 0.2s,
     transform ease 0.2s;
   box-shadow: var(--shadow);
 
-  @media screen and (min-width: 540px) {
-    font-size: 4rem;
-  }
-
   &:hover {
-    transform: rotateZ(0deg) translateX(0px);
-    border: double 0px var(--color-dark);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-up);
   }
 }

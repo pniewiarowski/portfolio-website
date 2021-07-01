@@ -6,16 +6,15 @@
   &::before {
     position: absolute;
     font-size: 10rem;
-    transform: rotate(7deg);
-    right: 1rem;
-    top: 1rem;
+    right: 2rem;
+    top: 2rem;
     font-weight: 700;
     z-index: 0;
 
     @media screen and (min-width: 540px) {
       font-size: 15rem;
-      right: 2rem;
-      top: 2rem;
+      right: 3rem;
+      top: 3rem;
     }
 
     @media screen and (min-width: 1080px) {
