@@ -12,9 +12,13 @@ class ScrollerTitleManager {
     });
   }
 
+  calculateRatio() {
+    return window.scrollY / window.innerHeight;
+  }
+
   init() {
     document.addEventListener("scroll", () => {
-      this.currentY = window.scrollY / window.innerHeight;
+      this.currentY = this.calculateRatio();
       this.changeWindowTitle();
     });
   }
