@@ -15,18 +15,10 @@
   }
 
   &__title {
-    font-size: 5.5rem;
+    font-size: 6.75rem;
     font-weight: 700;
     letter-spacing: 1px;
     color: var(--color-light);
-
-    @media screen and (min-width: 540px) {
-      font-size: 7rem;
-    }
-
-    @media screen and (min-width: 1080px) {
-      font-size: 9rem;
-    }
   }
 
   &__subtitle {
