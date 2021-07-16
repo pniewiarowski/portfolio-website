@@ -1,14 +1,17 @@
 .section {
-  height: 60vh;
   position: relative;
   overflow: hidden;
 
-  @media screen and (min-width: 540px) {
-    height: 70vh;
+  @media (orientation: landscape) {
+    height: 100vh;
   }
 
-  @media screen and (min-width: 1080px) {
+  @media (orientation: landscape) and (min-width: 890px) {
     height: 85vh;
+  }
+
+  @media (orientation: portrait) {
+    height: 60vh;
   }
 
   &::before {
