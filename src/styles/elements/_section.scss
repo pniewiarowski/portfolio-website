@@ -14,9 +14,9 @@
   &::before {
     position: absolute;
     font-size: 10rem;
-    right: 0rem;
-    top: 0rem;
     font-weight: 700;
+    top: 3rem;
+    right: 3rem;
     z-index: 0;
 
     @media screen and (min-width: 540px) {
