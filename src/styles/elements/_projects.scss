@@ -1,0 +1,31 @@
+.projects {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__list {
+        z-index: 5;
+    }
+
+    &__item {
+        background-color: var(--color-darker);
+        padding: 2rem;
+        margin: 2rem;
+        box-shadow: var(--shadow);
+    }
+
+    &__title {
+        color: var(--color-light);
+        font-size: 5rem;
+    }
+
+    &__link {
+        color: var(--color-accent);
+        font-size: 3rem;
+        font-weight: 100;
+        margin-right: 3rem;
+        cursor: pointer;
+    }
+}

@@ -12,7 +12,7 @@
         margin: 1rem 0;
         z-index: 5;
         display: flex;
-        overflow-x: scroll;
+        flex-wrap: wrap;
         background-color: var(--color-low-contrast-light);
 
         &::-webkit-scrollbar {
@@ -25,7 +25,7 @@
         font-weight: bold;
         color: var(--color-accent);
         background-color: var(--color-dark);
-        padding: 2rem 1rem 1rem 5rem;
+        padding: 2rem 2rem 2rem 5rem;
         z-index: 5;
         box-shadow: var(--shadow);
     }
