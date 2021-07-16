@@ -1,26 +1,30 @@
 .section {
-  height: 100vh;
+  height: 60vh;
   position: relative;
   overflow: hidden;
+
+  @media screen and (min-width: 540px) {
+    height: 70vh;
+  }
+
+  @media screen and (min-width: 1080px) {
+    height: 85vh;
+  }
 
   &::before {
     position: absolute;
     font-size: 10rem;
-    right: 2rem;
-    top: 2rem;
+    right: 0rem;
+    top: 0rem;
     font-weight: 700;
     z-index: 0;
 
     @media screen and (min-width: 540px) {
       font-size: 15rem;
-      right: 3rem;
-      top: 3rem;
     }
 
     @media screen and (min-width: 1080px) {
       font-size: 20rem;
-      right: 4rem;
-      top: 4rem;
     }
   }
 

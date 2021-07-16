@@ -15,16 +15,11 @@
     }
 
     &__image {
-        width: 12rem;
-        height: 9rem;
+        width: 14rem;
+        height: 11rem;
         margin: 0 auto;
 
-        @media screen and (min-width: 540px) {
-            width: 15rem;
-            height: 12rem;
-        }
-
-        @media screen and (min-width: 1080px) {
+        @media screen and (min-width: 420px) {
             width: 18rem;
             height: 15rem;
         }
