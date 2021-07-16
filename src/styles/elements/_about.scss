@@ -50,17 +50,5 @@
         position: relative;
         text-align: left;
         text-align: justify;
-
-        &::before {
-            content: "";
-            background-color: var(--color-accent);
-            position: absolute;
-            width: 2rem;
-            height: 2rem;
-            left: -3rem;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: -1;
-        }
     }
 }
