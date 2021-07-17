@@ -7,10 +7,11 @@
     flex-direction: column;
 
     &__pane {
-        width: 100%;
+   
+    }
+
+    &__skills {
         padding: 2rem;
-        margin: 1rem 0;
-        z-index: 5;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         background-color: var(--color-low-contrast-light);
@@ -28,5 +29,6 @@
         padding: 2rem 2rem 2rem 5rem;
         z-index: 5;
         box-shadow: var(--shadow);
+        width: fit-content;
     }
 }
