@@ -6,12 +6,12 @@
     height: 100vh;
   }
 
-  @media (orientation: landscape) and (min-width: 890px) {
-    height: 85vh;
+  @media (orientation: portrait) {
+    height: 100vh;
   }
 
-  @media (orientation: portrait) {
-    height: 60vh;
+  @media (orientation: portrait) and (min-width: 360px) {
+    height: 75vh;
   }
 
   &::before {
