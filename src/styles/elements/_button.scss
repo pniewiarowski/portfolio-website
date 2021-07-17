@@ -1,12 +1,12 @@
 .button {
   display: block;
-  width: 310px;
   width: fit-content;
+  padding: 2rem;
+  color: var(--color-darkest);
   background-color: var(--color-accent);
   font-size: 3rem;
   font-weight: bold;
   border-right: double 8px var(--color-darkest);
-  padding: 1.5rem;
   transition:
     transform ease 0.2s;
   box-shadow: var(--shadow);

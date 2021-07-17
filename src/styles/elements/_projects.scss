@@ -1,6 +1,5 @@
 .projects {
     height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,22 +14,21 @@
     }
 
     &__item {
-        background-color: var(--color-darkest);
-        padding: 2rem;
         margin: 2rem 0;
+        padding: 2rem;
+        background-color: var(--color-darkest);
         box-shadow: var(--shadow);
     }
 
     &__title {
-        color: var(--color-light);
         font-size: 5rem;
+        color: var(--color-light);
     }
 
     &__link {
-        color: var(--color-accent);
-        font-size: 3rem;
-        font-weight: normal;
         margin-right: 3rem;
+        font-size: 3rem;
+        color: var(--color-accent);
         cursor: pointer;
     }
 }
