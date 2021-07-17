@@ -12,7 +12,7 @@
         margin: 1rem 0;
         z-index: 5;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         background-color: var(--color-low-contrast-light);
 
         &::-webkit-scrollbar {
