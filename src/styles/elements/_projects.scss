@@ -9,8 +9,13 @@
         z-index: 5;
     }
 
+    &__heading {
+        font-size: 5rem;
+        color: var(--color-dark)
+    }
+
     &__item {
-        background-color: var(--color-darker);
+        background-color: var(--color-darkest);
         padding: 2rem;
         margin: 2rem;
         box-shadow: var(--shadow);
