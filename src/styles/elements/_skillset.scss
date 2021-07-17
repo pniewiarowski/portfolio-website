@@ -4,11 +4,16 @@
     align-items: center;
 
     &__skills {
-        padding: 4rem;
+        margin-top: 1rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 4rem;
+        grid-gap: 1rem;
         background-color: var(--color-low-contrast-light);
+
+        @media screen and (min-width: 540px) {
+            margin-top: 3rem;
+            grid-gap: 3rem;
+        }
     }
 
     &__heading {
