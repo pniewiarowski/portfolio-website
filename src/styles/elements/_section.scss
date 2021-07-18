@@ -1,18 +1,7 @@
 .section {
   position: relative;
   overflow: hidden;
-
-  @media (orientation: landscape) {
-    height: 100vh;
-  }
-
-  @media (orientation: portrait) {
-    height: 100vh;
-  }
-
-  @media (orientation: portrait) and (min-width: 360px) {
-    height: 75vh;
-  }
+  padding: 15rem 0;
 
   &::before {
     position: absolute;
