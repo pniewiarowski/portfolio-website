@@ -1,0 +1,39 @@
+.form {
+    padding: 2rem;
+    background-color: var(--color-accent);
+    border-top: 4px double var(--color-darkest);
+    border-bottom: 4px double var(--color-darkest);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__label {
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    &__email,
+    &__area {
+        width: 100%;
+        padding: 1rem;
+        font-size: 2rem;
+        color: var(--color-darkest);
+        margin: 1rem 0;
+    }
+
+    &__area {
+        height: 20rem;
+        resize: none;
+    }
+
+    &__submit {
+        width: 100%;
+        color: var(--color-accent);
+        background-color: var(--color-darkest);
+    }
+}

@@ -153,16 +153,17 @@
     <footer class="footer" id="contact">
         <div class="footer__pane pane">
             <h3 class="footer__heading">contact me</h3>
-            <form class="footer__form form">
+            <form class="footer__form form" method="post" data-netlify="true">
                 <label class="form__label">
                     <p class="form__text">your email</p>
-                    <input class="form__email" type="email" placeholder="email..." />
+                    <input class="form__email" type="email" name="email" placeholder="email..." />
                 </label>
                 <label class="form__label">
                     <p class="form__text">your message</p>
-                    <textarea class="form__area" placeholder="message..."></textarea>
+                    <textarea class="form__area" name="message" placeholder="message..."></textarea>
                 </label>
-                <input type="submit" value="send" />
+                <div data-netlify-recaptcha></div>
+                <input class="form__submit button" type="submit" value="send" />
             </form>
             <ul class="footer__list">
                 <li class="footer__item">Github:
