@@ -4,8 +4,8 @@
     border-top: 4px double var(--color-darkest);
     border-bottom: 4px double var(--color-darkest);
     display: flex;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 
     &__label {
@@ -35,5 +35,9 @@
         width: 100%;
         color: var(--color-accent);
         background-color: var(--color-darkest);
+    }
+
+    &__captcha {
+        margin: 2rem;
     }
 }
