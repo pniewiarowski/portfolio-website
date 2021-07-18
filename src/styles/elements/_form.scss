@@ -20,7 +20,7 @@
     &__email,
     &__area {
         width: 100%;
-        padding: 1rem;
+        padding: 2rem;
         font-size: 2rem;
         color: var(--color-darkest);
         margin: 1rem 0;
@@ -38,6 +38,6 @@
     }
 
     &__captcha {
-        margin: 2rem;
+        margin: 2rem 0;
     }
 }
