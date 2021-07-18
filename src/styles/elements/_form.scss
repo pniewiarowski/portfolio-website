@@ -24,6 +24,8 @@
         font-size: 2rem;
         color: var(--color-darkest);
         margin: 1rem 0;
+        border-bottom: double 8px var(--color-accent);
+        border-top: double 8px var(--color-accent);
     }
 
     &__area {
@@ -35,9 +37,5 @@
         width: 100%;
         color: var(--color-accent);
         background-color: var(--color-darkest);
-    }
-
-    &__captcha {
-        margin: 2rem 0;
     }
 }
