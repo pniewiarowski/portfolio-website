@@ -7,9 +7,7 @@
   font-size: 3rem;
   font-weight: bold;
   border-right: double 8px var(--color-darkest);
-  transition:
-    transform ease 0.2s,
-    box-shadow ease 0.2s;
+  transition: transform ease 0.2s, box-shadow ease 0.2s;
   box-shadow: var(--shadow);
   cursor: pointer;
 

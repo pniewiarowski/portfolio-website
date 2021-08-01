@@ -1,42 +1,42 @@
 .form {
-    margin: 3rem 0;
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: var(--color-accent);
+  border-top: 4px double var(--color-darkest);
+  border-bottom: 4px double var(--color-darkest);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  &__label {
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  &__email,
+  &__area {
+    width: 100%;
     padding: 2rem;
-    background-color: var(--color-accent);
-    border-top: 4px double var(--color-darkest);
-    border-bottom: 4px double var(--color-darkest);
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+    font-size: 2rem;
+    color: var(--color-darkest);
+    margin: 1rem 0;
+    border-bottom: double 8px var(--color-accent);
+    border-top: double 8px var(--color-accent);
+  }
 
-    &__label {
-        width: 100%;
-    }
+  &__area {
+    height: 20rem;
+    resize: none;
+  }
 
-    &__text {
-        font-size: 3rem;
-        font-weight: bold;
-    }
-
-    &__email,
-    &__area {
-        width: 100%;
-        padding: 2rem;
-        font-size: 2rem;
-        color: var(--color-darkest);
-        margin: 1rem 0;
-        border-bottom: double 8px var(--color-accent);
-        border-top: double 8px var(--color-accent);
-    }
-
-    &__area {
-        height: 20rem;
-        resize: none;
-    }
-
-    &__submit {
-        width: 100%;
-        color: var(--color-accent);
-        background-color: var(--color-darkest);
-    }
+  &__submit {
+    width: 100%;
+    color: var(--color-accent);
+    background-color: var(--color-darkest);
+  }
 }

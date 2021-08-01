@@ -1,40 +1,43 @@
 .skill {
-    padding: 2rem;
-    display: inline-block;
-    background-color: var(--color-darkest);
-    box-shadow: var(--shadow);
-    cursor: pointer;
-    transition:
-        0.3s ease-in-out transform,
-        0.3s ease-in-out box-shadow;
+  padding: 2rem;
+  display: inline-block;
+  background-color: var(--color-darkest);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: 0.3s ease-in-out transform, 0.3s ease-in-out box-shadow;
 
-    &:hover {
-        transform: translateY(-8px);
-        box-shadow: var(--shadow-up);
+  @media screen and (min-width: 720px) {
+    width: 18rem;
+    height: 15rem;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-up);
+  }
+
+  &__image {
+    width: 14rem;
+    height: 11rem;
+    margin: 0 auto;
+
+    @media screen and (min-width: 420px) {
+      width: 18rem;
+      height: 15rem;
     }
+  }
 
-    &__image {
-        width: 14rem;
-        height: 11rem;
-        margin: 0 auto;
+  &__name {
+    font-size: 2rem;
+    font-weight: 700px;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--color-light);
+  }
 
-        @media screen and (min-width: 420px) {
-            width: 18rem;
-            height: 15rem;
-        }
-    }
-
-    &__name {
-        font-size: 2rem;
-        font-weight: 700px;
-        text-align: center;
-        margin-top: 1rem;
-        color: var(--color-light)
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
