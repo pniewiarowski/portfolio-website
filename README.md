@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio website
 Portfolio website hosted on https://pniewiarowski.netlify.app
 
 ## Run locally
