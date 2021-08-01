@@ -20,14 +20,13 @@
   }
 
   &__subtitle {
-    margin-bottom: 6rem;
+    margin: 2rem 0 4rem 0;
     font-size: 4rem;
     font-weight: normal;
     color: var(--color-light);
-    transform: translateX(5%);
 
     @media screen and (min-width: 1080px) {
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
 }
