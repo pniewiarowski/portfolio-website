@@ -6,14 +6,11 @@
   cursor: pointer;
   transition: 0.3s ease-in-out transform, 0.3s ease-in-out box-shadow;
 
-  @media screen and (min-width: 720px) {
-    width: 18rem;
-    height: 15rem;
-  }
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-up);
+  @media screen and (min-width: 780px) {
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-up);
+    }
   }
 
   &__image {
