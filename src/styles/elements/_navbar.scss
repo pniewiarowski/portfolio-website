@@ -9,7 +9,6 @@
   border-bottom: 8px double var(--color-darkest);
   box-shadow: var(--shadow);
   z-index: 10;
-  transition: transform 0.2s ease-in-out;
   transform: translateX(-4px) translateY(-110%);
 
   &--active {

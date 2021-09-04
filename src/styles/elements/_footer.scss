@@ -1,9 +1,10 @@
 .footer {
   background-color: var(--color-darkest);
-  padding: 3rem 0;
+  padding: 2rem 0;
 
   &__heading {
     font-size: 7rem;
+    margin-bottom: 3rem;
     color: var(--color-light);
   }
 

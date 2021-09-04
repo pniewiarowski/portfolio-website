@@ -1,7 +1,9 @@
+import AOS from "aos";
 import Hamburger from "./app/Hamburger.js";
 import ScrollerTitleManager from "./app/ScrollerTitleManager.js";
 import ScrollerTitleManagerItem from "./app/ScrollerTitleManagerItem.js";
 import "./index.scss";
+import "aos/dist/aos.css";
 
 const hamburger = new Hamburger("[data-hamburger]", "[data-navbar]");
 const scrollerTitleManager = new ScrollerTitleManager([
@@ -12,5 +14,12 @@ const scrollerTitleManager = new ScrollerTitleManager([
   new ScrollerTitleManagerItem(3.00, 5.00, "pn - contact")
 ]);
 
-hamburger.init();
-scrollerTitleManager.init();
+window.addEventListener("load", () => {
+  hamburger.init();
+  scrollerTitleManager.init();
+  AOS.init({
+    once: false,
+    duration: 600
+  });
+  AOS.refresh();
+});
