@@ -19,7 +19,8 @@ window.addEventListener("load", () => {
   scrollerTitleManager.init();
   AOS.init({
     once: false,
-    duration: 600
+    duration: 500,
+    disable: "mobile"
   });
   AOS.refresh();
 });
