@@ -15,8 +15,7 @@ const scrollerTitleManager = new ScrollerTitleManager([
 ]);
 
 window.addEventListener("load", () => {
-  document.querySelector("[data-navbar]")
-    .style.transition = "0.3s transform ease";
+  document.body.classList.remove("preload");
 
   hamburger.init();
   scrollerTitleManager.init();
