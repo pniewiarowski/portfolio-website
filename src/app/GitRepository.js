@@ -1,9 +1,10 @@
 class GitRepository {
-  constructor(gitRepositorySelector = "", user = "", skippedRepos = []) {
+  constructor(gitRepositorySelector = "", user = "", skippedRepos = [], limit = 5) {
     this.apiEndpoint = `https://api.github.com/users/${user}/repos`;
     this.user = user;
     this.skippedRepos = skippedRepos;
     this.gitRepositorySelector = gitRepositorySelector;
+    this.limit = limit;
     this.gitRepository = null;
     this.apiResponse = null;
     this.fetchData = () =>
@@ -45,10 +46,13 @@ class GitRepository {
     this.gitRepository = document.querySelector(this.gitRepositorySelector);
     this.fetchData().then(() => {
       this.apiResponse.sort((a, b) => b["name"].length - a["name"].length);
+
+      this.counter = 0;
       this.apiResponse.forEach((item) => {
         if (
           item["name"].toLowerCase() === this.user.toLowerCase() ||
-          this.skippedRepos.includes(item["name"].toLowerCase())
+          this.skippedRepos.includes(item["name"].toLowerCase()) ||
+          this.counter >= this.limit
         ) {
           return;
         }
@@ -59,6 +63,7 @@ class GitRepository {
         listItem.appendChild(this.createLink(item["html_url"], "code"));
 
         this.gitRepository.appendChild(listItem);
+        this.counter++;
       });
     });
   }
